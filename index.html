@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Talha Mazhar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(to right, #000, #555);
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #000;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        .container {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 2.5rem;
+            border-left: 5px solid #f39c12;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project-card {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-card h3 {
+            margin: 15px;
+            font-size: 1.5rem;
+        }
+
+        .project-card p {
+            margin: 0 15px 15px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            background: #000;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Talha Mazhar</h1>
+        <p>Designing the Future of Infrastructure</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate civil engineer who thrives on solving real-world challenges. My work is focused on integrating technology into engineering for sustainable infrastructure development. Let's build a smarter, better world together!</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 1">
+                    <h3>Smart City Traffic Analysis</h3>
+                    <p>Optimized urban traffic patterns using PTV Vissim, improving city-wide flow efficiency.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 2">
+                    <h3>Eco-Friendly Drainage System</h3>
+                    <p>Designed a sustainable drainage system for urban environments, incorporating green infrastructure.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 3">
+                    <h3>Earthquake-Resistant Structures</h3>
+                    <p>Developed structural designs that meet international seismic safety standards.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Autodesk Certified Professional: Revit</li>
+                <li>ETABS Advanced Structural Design</li>
+                <li>Primavera P6 Professional Project Management</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:talha.mazhar@example.com">talha.mazhar@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/talha-mazhar" target="_blank">linkedin.com/in/talha-mazhar</a></p>
+            <p>GitHub: <a href="https://github.com/talhamazhar" target="_blank">github.com/talhamazhar</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Talha Mazhar. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
